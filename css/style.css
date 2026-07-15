@@ -79,12 +79,12 @@ h1,
 h2 {
     font-family: "Segoe UI", Roboto, sans-serif;
     margin-bottom: 1rem;
-    color: #4061db;
+    color: #050a1c;
 }
 
 h1 {
     font-size: 2rem;
-    border-bottom: 2px solid #0dc216;
+    border-bottom: 2px solid #ca8f8f;
     display: inline-block;
     padding-bottom: 0.3rem;
 }
@@ -123,6 +123,15 @@ h2 {
     gap: 1.5rem;
 }
 
+.skills-grid :hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #c4cae0;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0rem 0.5 rem;
+}
+
 .skills-card {
     background-color: #f4f4f4;
     padding: 1.5rem;
@@ -133,10 +142,82 @@ h2 {
 
 .skills-card dt {
     font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ca8f8f;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+
 }
 
 .skills-card dd {
-    margin: 0.5rem 0 0;
-    color: #666;
+    margin: 0;
+    color: #555;
     text-align: left;
+    font-size: 1rem;
+}
+
+.skills-card :hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ca8f8f;
+    color: #fff;
+}
+
+/* projects container */
+.projects-container {
+
+    background-color: #eae7e7;
+}
+
+.projects-card article {
+    background-color: #d2abab;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+
+.projects-container a {
+    color: #1e3a8a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.projects-container a:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
+
+.projects-container article:hover {
+    transform: translateY(-5px);
+}
+
+/* contact container */
+.contact-container {
+    background-color: #eae7e7;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact-container label {
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-top: 1rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    display: flex;
+
+    width: 100%;
+    border-radius: 6px;
 }
