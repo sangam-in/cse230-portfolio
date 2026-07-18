@@ -140,24 +140,26 @@
                     </div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mgogkwkl" method="POST">
                     <label for="name">Full Name</label>
-                    <input id="name" type="text" name="name" placeholder="Enter your name">
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
 
                     <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="Enter your email">
+                    <input id="email" type="email" name="_replyto" placeholder="Enter your email" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                        required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
+                <p class="form-note">Form submissions will now be sent through Formspree to your configured email.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Contact: <a href="mailto:sangam.pandey@example.com">sangam.pandey@example.com</a></p>
+        <p>Contact: <a href="mailto:sangampandey.in@gmail.com">sangampandey.in@gmail.com</a></p>
         <p>&copy; 2026 Sangam Pandey. All rights reserved.</p>
     </footer>
 </body>
